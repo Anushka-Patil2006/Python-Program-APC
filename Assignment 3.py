@@ -164,45 +164,139 @@ print("Consonants =", consonants)
 print("Digits =", digits)
 print("Spaces =", spaces)
 print("Special Characters =", special)
+# Reverse a string
+
+s = input("Enter a string: ")
+
+rev = ""
+
+for i in s:
+    rev = i + rev
+
+print("Reversed string:", rev)
+
+# Check whether a string is palindrome
+
+s = input("Enter a string: ")
+
+rev = ""
+
+for i in s:
+    rev = i + rev
+
+if s == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+# Count uppercase and lowercase letters
+
+s = input("Enter a string: ")
+
+upper = 0
+lower = 0
+
+for ch in s:
+    if ch.isupper():
+        upper += 1
+    elif ch.islower():
+        lower += 1
+
+print("Uppercase letters =", upper)
+print("Lowercase letters =", lower)
+
+
+# Replace one character with another
+
+s = input("Enter a string: ")
+old = input("Enter character to replace: ")
+new = input("Enter new character: ")
+
+result = ""
+
+for ch in s:
+    if ch == old:
+        result += new
+    else:
+        result += ch
+
+print("New string:", result)
+
+# Remove spaces from a string
+
+s = input("Enter a string: ")
+
+result = ""
+
+for ch in s:
+    if ch != " ":
+        result += ch
+
+print("String without spaces:", result)
+
+# Count frequency of a character
+
+s = input("Enter a string: ")
+ch = input("Enter the character: ")
+
+count = 0
+
+for i in s:
+    if i == ch:
+        count += 1
+
+print("Frequency =", count)
+
+# Program to print first and last character
+
+s = input("Enter a string: ")
+
+print("First character =", s[0])
+print("Last character =", s[-1])
+
+# Program to display ASCII value of each character
+
+s = input("Enter a string: ")
+
+for ch in s:
+    print(ch, "=", ord(ch))
+
+# Program to count words in a sentence
+
+s = input("Enter a sentence: ")
+
+words = s.split()
+
+print("Total words =", len(words))
+
+# Program to find the longest word
+
+s = input("Enter a sentence: ")
+
+words = s.split()
+
+longest = words[0]
+
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+
+print("Longest word =", longest)
+
+# Program to find the shortest word
+
+s = input("Enter a sentence: ")
+
+words = s.split()
+
+shortest = words[0]
+
+for word in words:
+    if len(word) < len(shortest):
+        shortest = word
+
+print("Shortest word =", shortest)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-    
-
-
-
-
-
-
-
-
-
-    
